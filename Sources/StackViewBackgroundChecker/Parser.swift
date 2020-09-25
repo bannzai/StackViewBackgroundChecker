@@ -42,7 +42,7 @@ extension Runner: XMLParserDelegate {
         let isStackViewChild = stackViewNodeList.contains(where: { ($0.level + 1) == level })
         if isStackViewChild {
             if elementName == "color" {
-                print("\(url) has background color attributes for stackView. level is \(level)")
+                print("\(url.absoluteString) has background color attributes for stackView at \(level) level")
             }
         }
     }
